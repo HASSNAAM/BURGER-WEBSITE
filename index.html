@@ -1,562 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BURGER WEBSITE</title>
+    <!-- swiper cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BURGER WEBSITE</title>
-        <!-- swiper cdn link -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-        <!-- font awesome cdn link  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <!-- custom css -->
-        <link rel="stylesheet" href="css/style.css">
+  <body>
+    <header class="header">
+      <a href="#" class="logo"> burger</a>
 
-    </head>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#special">speciality</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#dessert">dessert</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#order">order</a>
+      </nav>
 
-    <body>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+      </div>
 
-        <header class="header">
-            <a href="#" class="logo"> burger</a>
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="images/cart1.png" alt="" />
+          <div class="content">
+            <h3>cheese burger</h3>
+            <span class="price"> $11.99/-</span>
+          </div>
+        </div>
 
-            <nav class="navbar">
-                <a href="#home">home</a>
-                <a href="#special">speciality</a>
-                <a href="#about">about</a>
-                <a href="#menu">menu</a>
-                <a href="#dessert">dessert</a>
-                <a href="#gallery">gallery</a>
-                <a href="#review">review</a>
-                <a href="#order">order</a>
-            </nav>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="images/cart2.png" alt="" />
+          <div class="content">
+            <h3>steak burger</h3>
+            <span class="price"> $11.99/-</span>
+          </div>
+        </div>
 
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="images/cart3.png" alt="" />
+          <div class="content">
+            <h3>classic burger</h3>
+            <span class="price"> $11.99/-</span>
+          </div>
+        </div>
 
-            <div class="icons">
-                <div class="fas fa-bars" id="menu-btn"></div>
-                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="total">total: $50.99</div>
+        <a href="#" class="btn"> check out</a>
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <!-- home -->
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/slider1_bg.jpg) no-repeat"
+          >
+            <div class="content">
+              <img src="images/slider_icons.png" alt="" />
+              <h3>
+                order <br />
+                <span>home</span> burgers
+              </h3>
+              <a href="#" class="btn"> order now</a>
             </div>
+          </div>
 
-            <div class="shopping-cart">
-
-                <div class="box">
-                    <i class="fas fa-trash"></i>
-                    <img src="images/cart1.png" alt="">
-                    <div class="content">
-                        <h3>cheese burger</h3>
-                        <span class="price"> $11.99/-</span>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <i class="fas fa-trash"></i>
-                    <img src="images/cart2.png" alt="">
-                    <div class="content">
-                        <h3>steak burger</h3>
-                        <span class="price"> $11.99/-</span>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <i class="fas fa-trash"></i>
-                    <img src="images/cart3.png" alt="">
-                    <div class="content">
-                        <h3>classic burger</h3>
-                        <span class="price"> $11.99/-</span>
-                    </div>
-                </div>
-
-                <div class="total">total: $50.99</div>
-                <a href="#" class="btn"> check out</a>
-
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/slider2_bg.jpg) no-repeat"
+          >
+            <div class="content">
+              <img src="images/slider_icons.png" alt="" />
+              <h3>
+                order <br />
+                <span>home</span> burgers
+              </h3>
+              <a href="#" class="btn"> order now</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        </header>
+    <!-- home end -->
 
-        <!-- header end -->
+    <!-- speciality -->
 
-        <!-- home -->
+    <section class="special" id="special">
+      <h1 class="heading">our <span> speciality</span></h1>
 
-        <section class="home" id="home">
+      <div class="box-container">
+        <div class="box">
+          <img src="images/special1.jpg" alt="" />
+          <h3>big steak burger</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quis
+            iure est nesciunt alias
+          </p>
+          <div class="price">$20.99 <span>$25.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
 
-            <div class="swiper home-slider">
+        <div class="box">
+          <img src="images/special1.jpg" alt="" />
+          <h3>big steak burger</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quis
+            iure est nesciunt alias
+          </p>
+          <div class="price">$20.99 <span>$25.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+    </section>
 
-                <div class="swiper-wrapper">
+    <!-- speciality end-->
 
-                    <div class="swiper-slide slide" style="background: url(images/slider1_bg.jpg) no-repeat;">
-                        <div class="content">
-                            <img src="images/slider_icons.png" alt="">
-                            <h3>order <br> <span>home</span> burgers </h3>
-                            <a href="#" class="btn"> order now</a>
-                        </div>
-                    </div>
+    <!-- about us -->
 
-                    <div class="swiper-slide slide" style="background: url(images/slider2_bg.jpg) no-repeat;">
-                        <div class="content">
-                            <img src="images/slider_icons.png" alt="">
-                            <h3>order <br> <span>home</span> burgers </h3>
-                            <a href="#" class="btn"> order now</a>
-                        </div>
-                    </div>
+    <section class="about" id="about">
+      <h1 class="heading"><span>about </span> us</h1>
 
-                </div>
+      <div class="row">
+        <div class="image">
+          <img src="images/about2.jpg" alt="" />
+        </div>
 
+        <div class="content">
+          <span>welcome to our shop</span>
+          <h3>Since 1984. we believe that healthy food is tasty</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            laborum rerum sequi
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            laborum rerum sequi
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us end-->
+
+    <!-- menu -->
+
+    <section class="menu" id="menu">
+      <h1 class="heading">our <span>menu</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/menu1.jpg" alt="" />
+          <h3>double cheese burger</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="price">$18.99 <span>$23.99</span></div>
+          <a href="#" class="btn"> add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu2.jpg" alt="" />
+          <h3>blue cheese burger</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="price">$17.99 <span>$24.99</span></div>
+          <a href="#" class="btn"> add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu3.jpg" alt="" />
+          <h3>bacon cheese burger</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="price">$18.99 <span>$23.99</span></div>
+          <a href="#" class="btn"> add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu4.jpg" alt="" />
+          <h3>texas burger</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="price">$19.99 <span>$26.99</span></div>
+          <a href="#" class="btn"> add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu1.jpg" alt="" />
+          <h3>double cheese burger</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="price">$18.99 <span>$23.99</span></div>
+          <a href="#" class="btn"> add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu3.jpg" alt="" />
+          <h3>bacon burger</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="price">$18.99 <span>$23.99</span></div>
+          <a href="#" class="btn"> add to cart</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu end-->
+
+    <!-- parallex -->
+
+    <section class="parallex">
+      <img src="images/parallex-picture.png" alt="" />
+    </section>
+
+    <!-- parallex end-->
+
+    <!-- dessert -->
+
+    <section class="dessert" id="dessert">
+      <h1 class="heading">our <span>dessert</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/dessert1.jpg" alt="" />
+          <h3>apple pie</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            libero
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="price">$9.99 <span>$12.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/dessert2.jpg" alt="" />
+          <h3>a big one</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            libero
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="price">$11.99 <span>$14.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/dessert3.jpg" alt="" />
+          <h3>ice cream</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            libero
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price">$19.99 <span>$25.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- dessert end-->
+
+    <!-- gallery -->
+
+    <section class="gallery" id="gallery">
+      <h1 class="heading">our <span>gallery</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/gallery1.jpg" alt="" />
+          <div class="content">
+            <h3>bacon cheese burger</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn">order now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/gallery2.jpg" alt="" />
+          <div class="content">
+            <h3>texas cheese burger</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn">order now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/gallery3.jpg" alt="" />
+          <div class="content">
+            <h3>cheese burger</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn">order now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/gallery4.jpg" alt="" />
+          <div class="content">
+            <h3>blue cheese burger</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn">order now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/gallery1.jpg" alt="" />
+          <div class="content">
+            <h3>double cheese burger</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn">order now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/gallery2.jpg" alt="" />
+          <div class="content">
+            <h3>bacon cheese burger</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn">order now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery end -->
+
+    <!-- review -->
+
+    <section class="review" id="review">
+      <h1 class="heading">customer's <span> review</span></h1>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="images/review-1.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              adipisci eos, commodi nisi numquam ullam dolorum reprehenderit
+              eligendi neque, perspiciatis quod blanditiis! Deserunt vero
+              pariatur recusandae, illo enim harum vitae!
+            </p>
+            <h3>maria john</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+          </div>
 
-        </section>
-
-        <!-- home end -->
-
-        <!-- speciality -->
-
-        <section class="special" id="special">
-
-            <h1 class="heading">our <span> speciality</span></h1>
-
-            <div class="box-container">
-
-                <div class="box">
-                    <img src="images/special1.jpg" alt="">
-                    <h3>big steak burger</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quis iure est nesciunt alias </p>
-                    <div class="price">$20.99 <span>$25.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-
-                <div class="box">
-                    <img src="images/special1.jpg" alt="">
-                    <h3>big steak burger</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quis iure est nesciunt alias </p>
-                    <div class="price">$20.99 <span>$25.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-
+          <div class="swiper-slide slide">
+            <img src="images/review-2.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              adipisci eos, commodi nisi numquam ullam dolorum reprehenderit
+              eligendi neque, perspiciatis quod blanditiis! Deserunt vero
+              pariatur recusandae, illo enim harum vitae!
+            </p>
+            <h3>maria john</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+          </div>
 
-        </section>
-
-        <!-- speciality end-->
-
-        <!-- about us -->
-
-        <section class="about" id="about">
-
-            <h1 class="heading"> <span>about </span> us</h1>
-
-            <div class="row">
-                <div class="image">
-                    <img src="images/about2.jpg" alt="">
-                </div>
-
-                <div class="content">
-                    <span>welcome to our shop</span>
-                    <h3>Since 1984. we believe that healthy food is tasty</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum rerum sequi</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum rerum sequi</p>
-                </div>
+          <div class="swiper-slide slide">
+            <img src="images/review-3.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              adipisci eos, commodi nisi numquam ullam dolorum reprehenderit
+              eligendi neque, perspiciatis quod blanditiis! Deserunt vero
+              pariatur recusandae, illo enim harum vitae!
+            </p>
+            <h3>maria john</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+          </div>
 
-        </section>
-
-        <!-- about us end-->
-
-        <!-- menu -->
-
-        <section class="menu" id="menu">
-
-            <h1 class="heading"> our <span>menu</span></h1>
-
-            <div class="box-container">
-
-                <div class="box">
-                    <img src="images/menu1.jpg" alt="">
-                    <h3>double cheese burger</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$18.99 <span>$23.99</span></div>
-                    <a href="#" class="btn"> add to cart</a>
-                </div>
-
-                <div class="box">
-                    <img src="images/menu2.jpg" alt="">
-                    <h3>blue cheese burger</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$17.99 <span>$24.99</span></div>
-                    <a href="#" class="btn"> add to cart</a>
-                </div>
-
-                <div class="box">
-                    <img src="images/menu3.jpg" alt="">
-                    <h3>bacon cheese burger</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$18.99 <span>$23.99</span></div>
-                    <a href="#" class="btn"> add to cart</a>
-                </div>
-
-                <div class="box">
-                    <img src="images/menu4.jpg" alt="">
-                    <h3>texas burger</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$19.99 <span>$26.99</span></div>
-                    <a href="#" class="btn"> add to cart</a>
-                </div>
-
-                <div class="box">
-                    <img src="images/menu1.jpg" alt="">
-                    <h3>double cheese burger</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$18.99 <span>$23.99</span></div>
-                    <a href="#" class="btn"> add to cart</a>
-                </div>
-
-                <div class="box">
-                    <img src="images/menu3.jpg" alt="">
-                    <h3>bacon burger</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$18.99 <span>$23.99</span></div>
-                    <a href="#" class="btn"> add to cart</a>
-                </div>
-
+          <div class="swiper-slide slide">
+            <img src="images/review-4.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              adipisci eos, commodi nisi numquam ullam dolorum reprehenderit
+              eligendi neque, perspiciatis quod blanditiis! Deserunt vero
+              pariatur recusandae, illo enim harum vitae!
+            </p>
+            <h3>maria john</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-
-        </section>
-
-        <!-- menu end-->
-
-        <!-- parallex -->
-
-        <section class="parallex">
-            <img src="images/parallex-picture.png" alt="">
-        </section>
-
-        <!-- parallex end-->
-
-
-        <!-- dessert -->
-
-        <section class="dessert" id="dessert">
-
-            <h1 class="heading">our <span>dessert</span></h1>
-
-            <div class="box-container">
-
-                <div class="box">
-                    <img src="images/dessert1.jpg" alt="">
-                    <h3>apple pie</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore libero </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$9.99 <span>$12.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-
-                <div class="box">
-                    <img src="images/dessert2.jpg" alt="">
-                    <h3>a big one</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore libero </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$11.99 <span>$14.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-
-                <div class="box">
-                    <img src="images/dessert3.jpg" alt="">
-                    <h3>ice cream</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore libero </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price">$19.99 <span>$25.99</span></div>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-
-            </div>
-
-
-        </section>
-
-        <!-- dessert end-->
-
-
-        <!-- gallery -->
-
-        <section class="gallery" id="gallery">
-
-            <h1 class="heading">our <span>gallery</span></h1>
-
-            <div class="box-container">
-
-                <div class="box">
-                    <img src="images/gallery1.jpg" alt="">
-                    <div class="content">
-                        <h3>bacon cheese burger</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn">order now</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="images/gallery2.jpg" alt="">
-                    <div class="content">
-                        <h3>texas cheese burger</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn">order now</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="images/gallery3.jpg" alt="">
-                    <div class="content">
-                        <h3>cheese burger</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn">order now</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="images/gallery4.jpg" alt="">
-                    <div class="content">
-                        <h3>blue cheese burger</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn">order now</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="images/gallery1.jpg" alt="">
-                    <div class="content">
-                        <h3>double cheese burger</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn">order now</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="images/gallery2.jpg" alt="">
-                    <div class="content">
-                        <h3>bacon cheese burger</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn">order now</a>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- gallery end -->
-
-
-        <!-- review -->
-
-        <section class="review" id="review">
-
-            <h1 class="heading"> customer's <span> review</span> </h1>
-
-            <div class="swiper review-slider">
-
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide slide">
-                        <img src="images/review-1.png" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci eos, commodi nisi
-                            numquam ullam dolorum reprehenderit eligendi neque, perspiciatis quod blanditiis! Deserunt
-                            vero pariatur recusandae, illo enim harum vitae!</p>
-                        <h3>maria john</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <img src="images/review-2.png" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci eos, commodi nisi
-                            numquam ullam dolorum reprehenderit eligendi neque, perspiciatis quod blanditiis! Deserunt
-                            vero pariatur recusandae, illo enim harum vitae!</p>
-                        <h3>maria john</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <img src="images/review-3.png" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci eos, commodi nisi
-                            numquam ullam dolorum reprehenderit eligendi neque, perspiciatis quod blanditiis! Deserunt
-                            vero pariatur recusandae, illo enim harum vitae!</p>
-                        <h3>maria john</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <img src="images/review-4.png" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci eos, commodi nisi
-                            numquam ullam dolorum reprehenderit eligendi neque, perspiciatis quod blanditiis! Deserunt
-                            vero pariatur recusandae, illo enim harum vitae!</p>
-                        <h3>maria john</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- review end-->
-
-        <!-- order -->
-
-        <section class="order" id="order">
-
-            <h1 class="heading"> <span>order</span> now</h1>
-
-            <div class="row">
-                <div class="image">
-                    <img src="images/contact.gif" alt="">
-                </div>
-
-                <form action="">
-
-                    <div class="inputBox">
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" placeholder="Your Email">
-                    </div>
-
-                    <div class="inputBox">
-                        <input type="number" placeholder="Your Number">
-                        <input type="text" placeholder="Food Name">
-                    </div>
-
-                    <textarea placeholder="Your Address" cols="30" rows="10"></textarea>
-                    <input type="submit" value="order now" class="btn">
-
-                </form>
-            </div>
-
-        </section>
-
-
-        <!-- order end -->
-
-        <!-- footer -->
-
-        <section class="footer">
-
-            <div class="box-container">
-
-                <div class="box">
-                    <h3>find us here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit </p>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <h3>contact us</h3>
-                    <p>+61 8 4587 7415</p>
-                    <a href="#" class="link">ninjashub4@gmail.com</a>
-                </div>
-
-                <div class="box">
-                    <h3>localization</h3>
-                    <p>230 Points of the Pines Dr <br>
-                        Colorado Springs <br>
-                        United States
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="credit">created by <span>Hassnaa Mahmoud</span> | all rights reserved!</div>
-
-        </section>
-
-        <!-- footer end-->
-
-        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-        <!-- custom js -->
-        <script src="js/script.js"></script>
-    </body>
-
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review end-->
+
+    <!-- order -->
+
+    <section class="order" id="order">
+      <h1 class="heading"><span>order</span> now</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/contact.gif" alt="" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+          </div>
+
+          <div class="inputBox">
+            <input type="number" placeholder="Your Number" />
+            <input type="text" placeholder="Food Name" />
+          </div>
+
+          <textarea placeholder="Your Address" cols="30" rows="10"></textarea>
+          <input type="submit" value="order now" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <!-- order end -->
+
+    <!-- footer -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>find us here</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>contact us</h3>
+          <p>+61 8 4587 7415</p>
+          <a href="#" class="link">hassnaamahmoud@gmail.com</a>
+        </div>
+
+        <div class="box">
+          <h3>localization</h3>
+          <p>
+            230 Points of the Pines Dr <br />
+            Colorado Springs <br />
+            United States
+          </p>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>Hassnaa Mahmoud</span> | all rights reserved!
+      </div>
+    </section>
+
+    <!-- footer end-->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
